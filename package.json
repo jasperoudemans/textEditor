@@ -7,8 +7,8 @@
     "start:dev": "",
     "start": "node server/server.js",
     "server": "",
-    "build": "",
-    "install": "",
+    "build": "npm run build --prefix client",
+    "install": "npm install --prefix client && npm install --prefix server",
     "client": ""
   },
   "keywords": [],
