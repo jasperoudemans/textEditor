@@ -7,7 +7,7 @@
     "start:dev": "",
     "start": "node server/server.js",
     "server": "",
-    "build": "npm run build --prefix client",
+    "build": "rm -rf client/dist && npm run build --prefix client",
     "install": "npm install --prefix client && npm install --prefix server",
     "client": ""
   },
