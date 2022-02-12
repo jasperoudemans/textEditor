@@ -4,12 +4,12 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start:dev": "",
+    "start:dev": "concurrently \"npm:start --prefix client\" \"npm:server\"",
     "start": "node server/server.js",
-    "server": "",
+    "server": "npm run server --prefix server",
     "build": "rm -rf client/dist && npm run build --prefix client",
     "install": "npm install --prefix client && npm install --prefix server",
-    "client": ""
+    "client": "npm run start --prefix client"
   },
   "keywords": [],
   "author": "",
