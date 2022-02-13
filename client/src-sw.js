@@ -25,14 +25,3 @@ warmStrategyCache({
 });
 
 registerRoute(({ request }) => request.mode === "navigate", pageCache);
-
-// TODO: Implement asset caching
-registerRoute(
-  ({ url }) => {
-    console.log("In the registerroute");
-    return url.pathname === "/main.bundle.js";
-  },
-  async () => {
-    console.log("got there");
-  }
-);
